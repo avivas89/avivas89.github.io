@@ -169,7 +169,9 @@ ul.fa-ul li a {
 ul.fa-ul li:first-child {
     font-size: .9rem;
 }
-
+ul.fa-ul li:first-child i.fa.fa-map-marker {
+    font-size: 1rem;
+}
 ul.fa-ul li i {
     color: blueviolet;
 }
