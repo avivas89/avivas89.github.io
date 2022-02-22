@@ -1,21 +1,17 @@
 body {
-    background-image: url(../images/bio-background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center top;
-    background-attachment: fixed;
-}
-.container-fluid.p-0 {
-    background: rgba(0,0,0,.8);
+    color: #727272;
 }
 
+h1, h2, h3, h4 {
+    color: #000;
+}
 .img-curriculo div {
     width: 12em;
     height: 12em;
-    background: url(../images/img-curriculo.jpg);
+    background: url(../images/img-curriculo.png);
     background-size: cover;
     border-radius: 100%;
-    border: 5px solid #fff;
+    border: 5px solid #727272;
     margin-top: 3em;
     margin-bottom: 3em;
     margin-left: -15px;
@@ -27,18 +23,14 @@ body {
     align-items: center;
 }
 h3 {
-    color: #fff;
-    text-shadow: 1px 0px 3px #f5f5f5;
+    color: #000;
     margin-bottom: 35px;
     margin-top: 35px;
     font-weight: 700;
 }
-.proyectos h3 {
-    color: blueviolet;
-    text-shadow: 1px 0 3px #000000a3;
-}
-p {
-    color: #fff;
+
+p, ul.fa-ul li a  {
+    color: #727272;
 }
 .progress {
     width: 50%;
@@ -66,7 +58,7 @@ ul.timeline {
     max-width: 80%;
 }
 .timeline h2.h5.mb-0 {
-    color: blueviolet;
+    color: #000;
     text-align: left;
     margin-bottom: 15px!important;
 }
@@ -74,18 +66,19 @@ ul.timeline {
  /* Timeline vertical line */
 ul.timeline:before {
     content: ' ';
-    background: #fff;
+    background: #727272;
     display: inline-block;
     position: absolute;
     left: 16px;
     width: 4px;
     height: 100%;
     z-index: 400;
-    border-radius: 1rem;
+    border-radius: 5px;
 }
 
 li.timeline-item {
     margin: 20px 0;
+    border-radius: 15px;
 }
 
 /* Timeline item arrow */
@@ -101,7 +94,7 @@ li.timeline-item {
 /* Timeline item circle marker */
 li.timeline-item::before {
     content: ' ';
-    background: blueviolet;
+    background: #727272;
     display: inline-block;
     position: absolute;
     border-radius: 50%;
@@ -113,14 +106,13 @@ li.timeline-item::before {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .timeline p {
-    color: #212529;
+    color: #727272;
     font-size: .9rem;
 }
 li.timeline-item.bg-white.rounded.ml-3.p-4.shadow:hover {
     box-shadow: 0 .5rem 1rem rgba(255,255,255,.15)!important;
 }
 h1 {
-    color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 6px;
@@ -128,14 +120,12 @@ h1 {
 }
 
 h2 {
-    color: #fff;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5rem;
     text-align: center;
 }
 .dates {
-    background: repeating-linear-gradient(45deg, black, transparent 100px);
     padding-top: 35px;
     padding-bottom: 35px;
 }
@@ -157,13 +147,8 @@ ul.fa-ul {
 }
 
 ul.fa-ul li {
-    color: #fff;
     padding-right: 15px;
     margin-bottom: 15px;
-}
-
-ul.fa-ul li a {
-    color: #fff;
 }
 
 ul.fa-ul li:first-child {
@@ -171,7 +156,7 @@ ul.fa-ul li:first-child {
 }
 
 ul.fa-ul li i {
-    color: blueviolet;
+    color: #212529;
 }
 
 ul.fa-ul li:nth-child(2), ul.fa-ul li:last-child {
@@ -193,6 +178,10 @@ ul.fa-ul li:nth-child(2), ul.fa-ul li:last-child {
     left: 0;
     padding: 15px;
     transition: all 0.2s ease;
+}
+
+.inter-proyecto div a * {
+    color: #fff;
 }
 
 .inter-proyecto div a:hover {
@@ -238,5 +227,26 @@ ul.fa-ul li:nth-child(2), ul.fa-ul li:last-child {
     body {
        background-size: cover;
         background-position: left top;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+    .dates {
+        padding: 0;
+    }
+    .img-curriculo div {
+        width: 150px;
+        height: 150px;
+    }
+    ul.timeline {
+        max-width: calc(100% - 1.5rem);
     }
 }
