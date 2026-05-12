@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# 1. Quitar la extensión .html de la URL para estética
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+# 2. Manejo de rutas internas (SPA)
+# Si el archivo o carpeta no existe, redirigir a index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.html [L]
